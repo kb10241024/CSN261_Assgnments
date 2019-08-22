@@ -1,0 +1,293 @@
+\hypertarget{q2_8c}{}\section{/home/kavya/\+Desktop/csn261\+\_\+lab\+\_\+assignment1/q2/code/q2.c File Reference}
+\label{q2_8c}\index{/home/kavya/\+Desktop/csn261\+\_\+lab\+\_\+assignment1/q2/code/q2.\+c@{/home/kavya/\+Desktop/csn261\+\_\+lab\+\_\+assignment1/q2/code/q2.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for q2.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{q2_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{q2_8c_a4390955b3fe0dd831190f4e9b8448583}{insert\+\_\+rear} (int val)
+\begin{DoxyCompactList}\small\item\em -\/------I\+N\+S\+E\+RT AT rear -\/------ \end{DoxyCompactList}\item 
+void \hyperlink{q2_8c_a71af230fea7dfbda2719970ac0913251}{insert\+\_\+front} (int val)
+\begin{DoxyCompactList}\small\item\em -\/------I\+N\+S\+E\+RT AT front -\/------ \end{DoxyCompactList}\item 
+void \hyperlink{q2_8c_ac3d3329f1aab2fb8434bcd16ab8d346a}{delete\+\_\+rear} ()
+\begin{DoxyCompactList}\small\item\em -\/------D\+E\+L\+E\+TE F\+R\+OM rear-\/------ \end{DoxyCompactList}\item 
+void \hyperlink{q2_8c_a004bd8e62ebe43ba759b5723e71fcfa2}{delete\+\_\+front} ()
+\begin{DoxyCompactList}\small\item\em -\/------D\+E\+L\+E\+TE F\+R\+OM front-\/------ \end{DoxyCompactList}\item 
+void \hyperlink{q2_8c_a1e5b20fed15743656bb6d2e6a6ea6269}{display} ()
+\begin{DoxyCompactList}\small\item\em -\/-\/-\/-\/---\hyperlink{q2_8c_a1e5b20fed15743656bb6d2e6a6ea6269}{display()} D\+I\+S\+P\+L\+A\+YS the all elements in the D\+E\+Q\+U\+E\+U\+E-\/-\/-\/-\/--- \end{DoxyCompactList}\item 
+void \hyperlink{q2_8c_ac7bfa276ac6dfed6ca93feafbc3eb3ca}{double\+\_\+size} ()
+\begin{DoxyCompactList}\small\item\em method used to double the size of array \end{DoxyCompactList}\item 
+void \hyperlink{q2_8c_a708475122408c17e7a1525b05923ad66}{half\+\_\+size} ()
+\begin{DoxyCompactList}\small\item\em method used to half the size of array \end{DoxyCompactList}\item 
+void \hyperlink{q2_8c_a388f572c62279f839ee138a9afbdeeb5}{print} ()
+\begin{DoxyCompactList}\small\item\em Prints the capacity of D\+E\+Q\+U\+E\+UE. \end{DoxyCompactList}\item 
+int \hyperlink{q2_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{q2_8c_a36ecf0006f5fe9d8bf1f2c1f2f2b4554}{M\+AX} =10
+\begin{DoxyCompactList}\small\item\em M\+AX is the maximum size of array used by the D\+E\+Q\+U\+E\+UE. \end{DoxyCompactList}\item 
+int \hyperlink{q2_8c_a5d213da8162585478e2bd09141000d53}{C\+U\+R\+R\+E\+N\+T\+S\+I\+ZE} =0
+\begin{DoxyCompactList}\small\item\em C\+U\+R\+R\+E\+N\+T\+S\+I\+ZE represents the currentsize of D\+E\+Q\+U\+E\+UE at any time. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{q2_8c_a216ec8090e2365fd1101662140456d4a}{deque}
+\begin{DoxyCompactList}\small\item\em deque is the array used for D\+E\+Q\+U\+E\+UE \end{DoxyCompactList}\item 
+int \hyperlink{q2_8c_ac261b45b6346e633de22d510c9f6a770}{front} =-\/1
+\item 
+int \hyperlink{q2_8c_af866be352de659d624986cb76b8d45b6}{rear} =-\/1
+\begin{DoxyCompactList}\small\item\em front and rear are the pointers to the F\+R\+O\+NT and R\+E\+AR points respectively. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{q2_8c_a004bd8e62ebe43ba759b5723e71fcfa2}\label{q2_8c_a004bd8e62ebe43ba759b5723e71fcfa2}} 
+\index{q2.\+c@{q2.\+c}!delete\+\_\+front@{delete\+\_\+front}}
+\index{delete\+\_\+front@{delete\+\_\+front}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{delete\+\_\+front()}{delete\_front()}}
+{\footnotesize\ttfamily void delete\+\_\+front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+-\/------D\+E\+L\+E\+TE F\+R\+OM front-\/------ 
+
+This method will be used to delete front end of the deque \begin{DoxyAuthor}{Author}
+Kavya Barnwal
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 188 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_ac3d3329f1aab2fb8434bcd16ab8d346a}\label{q2_8c_ac3d3329f1aab2fb8434bcd16ab8d346a}} 
+\index{q2.\+c@{q2.\+c}!delete\+\_\+rear@{delete\+\_\+rear}}
+\index{delete\+\_\+rear@{delete\+\_\+rear}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{delete\+\_\+rear()}{delete\_rear()}}
+{\footnotesize\ttfamily void delete\+\_\+rear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+-\/------D\+E\+L\+E\+TE F\+R\+OM rear-\/------ 
+
+This method will be used to delete rear end of the deque \begin{DoxyAuthor}{Author}
+Kavya Barnwal
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 156 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_a1e5b20fed15743656bb6d2e6a6ea6269}\label{q2_8c_a1e5b20fed15743656bb6d2e6a6ea6269}} 
+\index{q2.\+c@{q2.\+c}!display@{display}}
+\index{display@{display}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+-\/-\/-\/-\/---\hyperlink{q2_8c_a1e5b20fed15743656bb6d2e6a6ea6269}{display()} D\+I\+S\+P\+L\+A\+YS the all elements in the D\+E\+Q\+U\+E\+U\+E-\/-\/-\/-\/--- 
+
+
+
+Definition at line 216 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_ac7bfa276ac6dfed6ca93feafbc3eb3ca}\label{q2_8c_ac7bfa276ac6dfed6ca93feafbc3eb3ca}} 
+\index{q2.\+c@{q2.\+c}!double\+\_\+size@{double\+\_\+size}}
+\index{double\+\_\+size@{double\+\_\+size}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{double\+\_\+size()}{double\_size()}}
+{\footnotesize\ttfamily void double\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method used to double the size of array 
+
+This method will double the capacity of the deque \begin{DoxyAuthor}{Author}
+Kavya Barnwal
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 256 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_a708475122408c17e7a1525b05923ad66}\label{q2_8c_a708475122408c17e7a1525b05923ad66}} 
+\index{q2.\+c@{q2.\+c}!half\+\_\+size@{half\+\_\+size}}
+\index{half\+\_\+size@{half\+\_\+size}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{half\+\_\+size()}{half\_size()}}
+{\footnotesize\ttfamily void half\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+method used to half the size of array 
+
+This method will half the capacity of the dequeue \begin{DoxyAuthor}{Author}
+Kavya Barnwal
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 297 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_a71af230fea7dfbda2719970ac0913251}\label{q2_8c_a71af230fea7dfbda2719970ac0913251}} 
+\index{q2.\+c@{q2.\+c}!insert\+\_\+front@{insert\+\_\+front}}
+\index{insert\+\_\+front@{insert\+\_\+front}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{insert\+\_\+front()}{insert\_front()}}
+{\footnotesize\ttfamily void insert\+\_\+front (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+-\/------I\+N\+S\+E\+RT AT front -\/------ 
+
+This method will be used to insert at the front end of the deque \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to be inserted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 118 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_a4390955b3fe0dd831190f4e9b8448583}\label{q2_8c_a4390955b3fe0dd831190f4e9b8448583}} 
+\index{q2.\+c@{q2.\+c}!insert\+\_\+rear@{insert\+\_\+rear}}
+\index{insert\+\_\+rear@{insert\+\_\+rear}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{insert\+\_\+rear()}{insert\_rear()}}
+{\footnotesize\ttfamily void insert\+\_\+rear (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+-\/------I\+N\+S\+E\+RT AT rear -\/------ 
+
+This method will be used to insert at the rear end of the deque \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value to be inserted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 84 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{q2_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{q2.\+c@{q2.\+c}!main@{main}}
+\index{main@{main}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_a388f572c62279f839ee138a9afbdeeb5}\label{q2_8c_a388f572c62279f839ee138a9afbdeeb5}} 
+\index{q2.\+c@{q2.\+c}!print@{print}}
+\index{print@{print}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the capacity of D\+E\+Q\+U\+E\+UE. 
+
+This method will print the capacity of the dequeue in terms of bytes. \begin{DoxyAuthor}{Author}
+Kavya Barnwal
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 337 of file q2.\+c.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{q2_8c_a5d213da8162585478e2bd09141000d53}\label{q2_8c_a5d213da8162585478e2bd09141000d53}} 
+\index{q2.\+c@{q2.\+c}!C\+U\+R\+R\+E\+N\+T\+S\+I\+ZE@{C\+U\+R\+R\+E\+N\+T\+S\+I\+ZE}}
+\index{C\+U\+R\+R\+E\+N\+T\+S\+I\+ZE@{C\+U\+R\+R\+E\+N\+T\+S\+I\+ZE}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{C\+U\+R\+R\+E\+N\+T\+S\+I\+ZE}{CURRENTSIZE}}
+{\footnotesize\ttfamily int C\+U\+R\+R\+E\+N\+T\+S\+I\+ZE =0}
+
+
+
+C\+U\+R\+R\+E\+N\+T\+S\+I\+ZE represents the currentsize of D\+E\+Q\+U\+E\+UE at any time. 
+
+
+
+Definition at line 32 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_a216ec8090e2365fd1101662140456d4a}\label{q2_8c_a216ec8090e2365fd1101662140456d4a}} 
+\index{q2.\+c@{q2.\+c}!deque@{deque}}
+\index{deque@{deque}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{deque}{deque}}
+{\footnotesize\ttfamily int$\ast$ deque}
+
+
+
+deque is the array used for D\+E\+Q\+U\+E\+UE 
+
+
+
+Definition at line 34 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_ac261b45b6346e633de22d510c9f6a770}\label{q2_8c_ac261b45b6346e633de22d510c9f6a770}} 
+\index{q2.\+c@{q2.\+c}!front@{front}}
+\index{front@{front}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{front}{front}}
+{\footnotesize\ttfamily int front =-\/1}
+
+
+
+Definition at line 35 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_a36ecf0006f5fe9d8bf1f2c1f2f2b4554}\label{q2_8c_a36ecf0006f5fe9d8bf1f2c1f2f2b4554}} 
+\index{q2.\+c@{q2.\+c}!M\+AX@{M\+AX}}
+\index{M\+AX@{M\+AX}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{M\+AX}{MAX}}
+{\footnotesize\ttfamily int M\+AX =10}
+
+
+
+M\+AX is the maximum size of array used by the D\+E\+Q\+U\+E\+UE. 
+
+
+
+Definition at line 31 of file q2.\+c.
+
+\mbox{\Hypertarget{q2_8c_af866be352de659d624986cb76b8d45b6}\label{q2_8c_af866be352de659d624986cb76b8d45b6}} 
+\index{q2.\+c@{q2.\+c}!rear@{rear}}
+\index{rear@{rear}!q2.\+c@{q2.\+c}}
+\subsubsection{\texorpdfstring{rear}{rear}}
+{\footnotesize\ttfamily int rear =-\/1}
+
+
+
+front and rear are the pointers to the F\+R\+O\+NT and R\+E\+AR points respectively. 
+
+
+
+Definition at line 35 of file q2.\+c.
+

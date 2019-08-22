@@ -1,0 +1,382 @@
+\hypertarget{q1_8c}{}\section{/home/kavya/\+Desktop/csn261\+\_\+lab\+\_\+assignment1/q1/code/q1.c File Reference}
+\label{q1_8c}\index{/home/kavya/\+Desktop/csn261\+\_\+lab\+\_\+assignment1/q1/code/q1.\+c@{/home/kavya/\+Desktop/csn261\+\_\+lab\+\_\+assignment1/q1/code/q1.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for q1.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{q1_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_student}{Student}
+\begin{DoxyCompactList}\small\item\em student nodes storing Roll,Name,Address,D\+OB and Phone number. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_q_node}{Q\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_q_node}{Q\+Node} for storing unused\+Rolls. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{q1_8c_a28040132a3b8ad1dbacdf2a7b5456324}{enqueue} (int d)
+\begin{DoxyCompactList}\small\item\em enqueue data into the queue for unused\+Rolls \end{DoxyCompactList}\item 
+int \hyperlink{q1_8c_ad6e0da35e82ee741ee4e9779fdf9e1c9}{dequeue} ()
+\begin{DoxyCompactList}\small\item\em dequeue data from the queue for unused\+Rolls \end{DoxyCompactList}\item 
+struct \hyperlink{struct_student}{Student} $\ast$ \hyperlink{q1_8c_a0c9e567a874149bbd3bafac57055228d}{search} (int roll)
+\item 
+void \hyperlink{q1_8c_a35c71ffe4242840e71e590fd7460bfb2}{insert\+Student} (char nm\mbox{[}$\,$\mbox{]}, char dob\mbox{[}$\,$\mbox{]}, char adrs\mbox{[}$\,$\mbox{]}, long long int phone)
+\item 
+struct \hyperlink{struct_student}{Student} $\ast$ \hyperlink{q1_8c_aadd4e680f1f42d39a5ef8d217cba9e9f}{delete} (int roll)
+\item 
+void \hyperlink{q1_8c_a6862f05c55f3e2b4fc7483bbe8c5e66e}{modify} (int roll, char nm\mbox{[}$\,$\mbox{]}, char dob\mbox{[}$\,$\mbox{]}, char adrs\mbox{[}$\,$\mbox{]}, long long int phone)
+\item 
+void \hyperlink{q1_8c_a1fde8665b00c0d8b37581447a7dcb959}{print} (struct \hyperlink{struct_student}{Student} $\ast$n)
+\item 
+void \hyperlink{q1_8c_ac3d6b1c1e40ddae8a7b4273be5d7c091}{swap} (struct \hyperlink{struct_student}{Student} $\ast$s1, struct \hyperlink{struct_student}{Student} $\ast$s2)
+\item 
+void \hyperlink{q1_8c_a47fdc9eea42b6975cdc835bb2e08810e}{sort} ()
+\item 
+void \hyperlink{q1_8c_a2145130bf1a181011d026cf0fc97e1e4}{remove\+Char} (char $\ast$s, int c)
+\item 
+long long int \hyperlink{q1_8c_a0d7446f3b40f9b93b5def4c6453cdd14}{Convert\+Char\+To\+Long} (char $\ast$p\+Src)
+\item 
+void \hyperlink{q1_8c_a9a146e54485452a350f21d5c32f8a96b}{get\+Data} (char data\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{q1_8c_ab1703367762abc1490e00dcd5ccb29bc}{read\+Data} ()
+\item 
+void \hyperlink{q1_8c_a63e83e1746a7d77e0dd4a27af9b51e96}{insert} (int num)
+\item 
+int \hyperlink{q1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_student}{Student} $\ast$ \hyperlink{q1_8c_aa26c266dac077132d25008e29b6bb1c5}{first} = N\+U\+LL
+\begin{DoxyCompactList}\small\item\em first and last Nodes pointing to front and rear of doubly-\/linked-\/list \end{DoxyCompactList}\item 
+struct \hyperlink{struct_student}{Student} $\ast$ \hyperlink{q1_8c_aa8dff5b0cd1a0f043d232bc6b42bfef9}{last} =N\+U\+LL
+\item 
+int \hyperlink{q1_8c_a7347196987a9a7a7abf12cdaf9e54f49}{roll\+Count} =100
+\begin{DoxyCompactList}\small\item\em containing the current roll count at each instant \end{DoxyCompactList}\item 
+struct \hyperlink{struct_q_node}{Q\+Node} $\ast$ \hyperlink{q1_8c_a74f2bd32b733faa4cb558a4055478a72}{Qfront} =N\+U\+LL
+\begin{DoxyCompactList}\small\item\em Qfront and Qrear are the pointers to front and rear of the queue. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_q_node}{Q\+Node} $\ast$ \hyperlink{q1_8c_a8ce9ad364c967e211fae5a2ede256e4e}{Qrear} =N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{q1_8c_a0d7446f3b40f9b93b5def4c6453cdd14}\label{q1_8c_a0d7446f3b40f9b93b5def4c6453cdd14}} 
+\index{q1.\+c@{q1.\+c}!Convert\+Char\+To\+Long@{Convert\+Char\+To\+Long}}
+\index{Convert\+Char\+To\+Long@{Convert\+Char\+To\+Long}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{Convert\+Char\+To\+Long()}{ConvertCharToLong()}}
+{\footnotesize\ttfamily long long int Convert\+Char\+To\+Long (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Src }\end{DoxyParamCaption})}
+
+
+
+Definition at line 246 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_aadd4e680f1f42d39a5ef8d217cba9e9f}\label{q1_8c_aadd4e680f1f42d39a5ef8d217cba9e9f}} 
+\index{q1.\+c@{q1.\+c}!delete@{delete}}
+\index{delete@{delete}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily struct \hyperlink{struct_student}{Student}$\ast$ delete (\begin{DoxyParamCaption}\item[{int}]{roll }\end{DoxyParamCaption})}
+
+This method will be used to perform deletion of student with given Roll. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em roll} & used to search in Data\+Base \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 126 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_ad6e0da35e82ee741ee4e9779fdf9e1c9}\label{q1_8c_ad6e0da35e82ee741ee4e9779fdf9e1c9}} 
+\index{q1.\+c@{q1.\+c}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{dequeue()}{dequeue()}}
+{\footnotesize\ttfamily int dequeue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+dequeue data from the queue for unused\+Rolls 
+
+
+
+Definition at line 49 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a28040132a3b8ad1dbacdf2a7b5456324}\label{q1_8c_a28040132a3b8ad1dbacdf2a7b5456324}} 
+\index{q1.\+c@{q1.\+c}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily void enqueue (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})}
+
+
+
+enqueue data into the queue for unused\+Rolls 
+
+
+
+Definition at line 36 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a9a146e54485452a350f21d5c32f8a96b}\label{q1_8c_a9a146e54485452a350f21d5c32f8a96b}} 
+\index{q1.\+c@{q1.\+c}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}}
+{\footnotesize\ttfamily void get\+Data (\begin{DoxyParamCaption}\item[{char}]{data\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 255 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a63e83e1746a7d77e0dd4a27af9b51e96}\label{q1_8c_a63e83e1746a7d77e0dd4a27af9b51e96}} 
+\index{q1.\+c@{q1.\+c}!insert@{insert}}
+\index{insert@{insert}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void insert (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+This method will be used to perform insertion of student with given number. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em num} & representing the (row-\/1) to be inserted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 305 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a35c71ffe4242840e71e590fd7460bfb2}\label{q1_8c_a35c71ffe4242840e71e590fd7460bfb2}} 
+\index{q1.\+c@{q1.\+c}!insert\+Student@{insert\+Student}}
+\index{insert\+Student@{insert\+Student}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{insert\+Student()}{insertStudent()}}
+{\footnotesize\ttfamily void insert\+Student (\begin{DoxyParamCaption}\item[{char}]{nm\mbox{[}$\,$\mbox{]},  }\item[{char}]{dob\mbox{[}$\,$\mbox{]},  }\item[{char}]{adrs\mbox{[}$\,$\mbox{]},  }\item[{long long int}]{phone }\end{DoxyParamCaption})}
+
+This method will be used to inser\+Student with given details except Roll. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em name,dob,addrs,phone} & required details of sudents \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 94 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{q1_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{q1.\+c@{q1.\+c}!main@{main}}
+\index{main@{main}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 321 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a6862f05c55f3e2b4fc7483bbe8c5e66e}\label{q1_8c_a6862f05c55f3e2b4fc7483bbe8c5e66e}} 
+\index{q1.\+c@{q1.\+c}!modify@{modify}}
+\index{modify@{modify}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{modify()}{modify()}}
+{\footnotesize\ttfamily void modify (\begin{DoxyParamCaption}\item[{int}]{roll,  }\item[{char}]{nm\mbox{[}$\,$\mbox{]},  }\item[{char}]{dob\mbox{[}$\,$\mbox{]},  }\item[{char}]{adrs\mbox{[}$\,$\mbox{]},  }\item[{long long int}]{phone }\end{DoxyParamCaption})}
+
+This method will be used to modify details of student excpept Roll. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em roll} & used to search in Data\+Base, nm,dob,adrs,phone to be updated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 166 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a1fde8665b00c0d8b37581447a7dcb959}\label{q1_8c_a1fde8665b00c0d8b37581447a7dcb959}} 
+\index{q1.\+c@{q1.\+c}!print@{print}}
+\index{print@{print}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void print (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_student}{Student} $\ast$}]{n }\end{DoxyParamCaption})}
+
+This method will be used to print the list of all students. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em student,head} & of the Doubly-\/linked-\/list of students \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 182 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_ab1703367762abc1490e00dcd5ccb29bc}\label{q1_8c_ab1703367762abc1490e00dcd5ccb29bc}} 
+\index{q1.\+c@{q1.\+c}!read\+Data@{read\+Data}}
+\index{read\+Data@{read\+Data}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{read\+Data()}{readData()}}
+{\footnotesize\ttfamily void read\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method will be used to read the complete data in Student.\+csv file(all students). \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 286 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a2145130bf1a181011d026cf0fc97e1e4}\label{q1_8c_a2145130bf1a181011d026cf0fc97e1e4}} 
+\index{q1.\+c@{q1.\+c}!remove\+Char@{remove\+Char}}
+\index{remove\+Char@{remove\+Char}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{remove\+Char()}{removeChar()}}
+{\footnotesize\ttfamily void remove\+Char (\begin{DoxyParamCaption}\item[{char $\ast$}]{s,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 237 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a0c9e567a874149bbd3bafac57055228d}\label{q1_8c_a0c9e567a874149bbd3bafac57055228d}} 
+\index{q1.\+c@{q1.\+c}!search@{search}}
+\index{search@{search}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily struct \hyperlink{struct_student}{Student}$\ast$ search (\begin{DoxyParamCaption}\item[{int}]{roll }\end{DoxyParamCaption})}
+
+This method will be used to search the student with given Roll. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em roll} & used to search in Data\+Base \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 76 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a47fdc9eea42b6975cdc835bb2e08810e}\label{q1_8c_a47fdc9eea42b6975cdc835bb2e08810e}} 
+\index{q1.\+c@{q1.\+c}!sort@{sort}}
+\index{sort@{sort}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily void sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method will be used to perform sorting by name. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 223 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_ac3d6b1c1e40ddae8a7b4273be5d7c091}\label{q1_8c_ac3d6b1c1e40ddae8a7b4273be5d7c091}} 
+\index{q1.\+c@{q1.\+c}!swap@{swap}}
+\index{swap@{swap}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_student}{Student} $\ast$}]{s1,  }\item[{struct \hyperlink{struct_student}{Student} $\ast$}]{s2 }\end{DoxyParamCaption})}
+
+This method will be used to perform swapping of details of two students. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em s1,s2} & to be swapped \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 197 of file q1.\+c.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{q1_8c_aa26c266dac077132d25008e29b6bb1c5}\label{q1_8c_aa26c266dac077132d25008e29b6bb1c5}} 
+\index{q1.\+c@{q1.\+c}!first@{first}}
+\index{first@{first}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{first}{first}}
+{\footnotesize\ttfamily struct \hyperlink{struct_student}{Student}$\ast$ first = N\+U\+LL}
+
+
+
+first and last Nodes pointing to front and rear of doubly-\/linked-\/list 
+
+
+
+Definition at line 24 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_aa8dff5b0cd1a0f043d232bc6b42bfef9}\label{q1_8c_aa8dff5b0cd1a0f043d232bc6b42bfef9}} 
+\index{q1.\+c@{q1.\+c}!last@{last}}
+\index{last@{last}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{last}{last}}
+{\footnotesize\ttfamily struct \hyperlink{struct_student}{Student} $\ast$ last =N\+U\+LL}
+
+
+
+Definition at line 24 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a74f2bd32b733faa4cb558a4055478a72}\label{q1_8c_a74f2bd32b733faa4cb558a4055478a72}} 
+\index{q1.\+c@{q1.\+c}!Qfront@{Qfront}}
+\index{Qfront@{Qfront}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{Qfront}{Qfront}}
+{\footnotesize\ttfamily struct \hyperlink{struct_q_node}{Q\+Node}$\ast$ Qfront =N\+U\+LL}
+
+
+
+Qfront and Qrear are the pointers to front and rear of the queue. 
+
+
+
+Definition at line 34 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a8ce9ad364c967e211fae5a2ede256e4e}\label{q1_8c_a8ce9ad364c967e211fae5a2ede256e4e}} 
+\index{q1.\+c@{q1.\+c}!Qrear@{Qrear}}
+\index{Qrear@{Qrear}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{Qrear}{Qrear}}
+{\footnotesize\ttfamily struct \hyperlink{struct_q_node}{Q\+Node} $\ast$ Qrear =N\+U\+LL}
+
+
+
+Definition at line 34 of file q1.\+c.
+
+\mbox{\Hypertarget{q1_8c_a7347196987a9a7a7abf12cdaf9e54f49}\label{q1_8c_a7347196987a9a7a7abf12cdaf9e54f49}} 
+\index{q1.\+c@{q1.\+c}!roll\+Count@{roll\+Count}}
+\index{roll\+Count@{roll\+Count}!q1.\+c@{q1.\+c}}
+\subsubsection{\texorpdfstring{roll\+Count}{rollCount}}
+{\footnotesize\ttfamily int roll\+Count =100}
+
+
+
+containing the current roll count at each instant 
+
+
+
+Definition at line 26 of file q1.\+c.
+

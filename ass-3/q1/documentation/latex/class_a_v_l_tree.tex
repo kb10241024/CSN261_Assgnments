@@ -1,0 +1,331 @@
+\hypertarget{class_a_v_l_tree}{}\section{A\+V\+L\+Tree Class Reference}
+\label{class_a_v_l_tree}\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+
+
+Class for A\+VL Tree.  
+
+
+
+
+Collaboration diagram for A\+V\+L\+Tree\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_a_v_l_tree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_a_v_l_tree_a96cbfc11d7b61204423d22d4dec3cb39}{height} (\hyperlink{class_node}{Node} $\ast$N)
+\item 
+int \hyperlink{class_a_v_l_tree_ae5cd885ee0ad8a06a933bdac473c3cc5}{max} (int a, int b)
+\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{class_a_v_l_tree_a7d0da3880ea6b30f7df37547f99be642}{new\+Node} (int key)
+\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{class_a_v_l_tree_a735406d043d3dc61e0ed08455381487a}{right\+Rotate} (\hyperlink{class_node}{Node} $\ast$y)
+\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{class_a_v_l_tree_a8dc98844f7c4301e071bbc7c062ba9b5}{left\+Rotate} (\hyperlink{class_node}{Node} $\ast$x)
+\item 
+int \hyperlink{class_a_v_l_tree_aff1b11f5d1e3b013877c1fc1ace0b6a8}{get\+Balance} (\hyperlink{class_node}{Node} $\ast$N)
+\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{class_a_v_l_tree_adab09466d7b80c7b10eade93fca1b831}{insert} (\hyperlink{class_node}{Node} $\ast$\hyperlink{structnode}{node}, int key)
+\item 
+void \hyperlink{class_a_v_l_tree_a3dc3f18fce5d4124bfb94eb6cfa2e400}{in\+Order} (\hyperlink{class_node}{Node} $\ast$\hyperlink{class_a_v_l_tree_a3db9914a012a92648fc774b1112c79f0}{root})
+\item 
+void \hyperlink{class_a_v_l_tree_a4a917504798c964c12d6ea23bff6710c}{level\+Vise\+Indentation\+Helper} (\hyperlink{class_node}{Node} $\ast$rt, int l)
+\item 
+void \hyperlink{class_a_v_l_tree_a4717d25b108d9ad8d67258c75e44f696}{level\+Vise\+Indentation} ()
+\item 
+void \hyperlink{class_a_v_l_tree_a6fe238e7e0e458de06ee3357f5044e3a}{print\+Path} (\hyperlink{class_node}{Node} $\ast$rt, string s)
+\item 
+void \hyperlink{class_a_v_l_tree_acfeb6a8c2b2ddd309747a7f5d402e2ed}{get\+All\+Paths} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{class_a_v_l_tree_a3db9914a012a92648fc774b1112c79f0}{root}
+\begin{DoxyCompactList}\small\item\em Root of A\+VL Tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for A\+VL Tree. 
+
+Definition at line 368 of file q1.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_v_l_tree_acfeb6a8c2b2ddd309747a7f5d402e2ed}\label{class_a_v_l_tree_acfeb6a8c2b2ddd309747a7f5d402e2ed}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!get\+All\+Paths@{get\+All\+Paths}}
+\index{get\+All\+Paths@{get\+All\+Paths}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{get\+All\+Paths()}{getAllPaths()}}
+{\footnotesize\ttfamily void A\+V\+L\+Tree\+::get\+All\+Paths (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method will be used to print all the paths from root node to the N\+U\+LL pointers of A\+VL Tree. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 616 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_a_v_l_tree_aff1b11f5d1e3b013877c1fc1ace0b6a8}\label{class_a_v_l_tree_aff1b11f5d1e3b013877c1fc1ace0b6a8}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!get\+Balance@{get\+Balance}}
+\index{get\+Balance@{get\+Balance}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{get\+Balance()}{getBalance()}}
+{\footnotesize\ttfamily int A\+V\+L\+Tree\+::get\+Balance (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get Balance factor of node N. 
+\begin{DoxyParams}{Parameters}
+{\em N} & \hyperlink{class_node}{Node} for which balance factor is to be determined. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 476 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_a_v_l_tree_a96cbfc11d7b61204423d22d4dec3cb39}\label{class_a_v_l_tree_a96cbfc11d7b61204423d22d4dec3cb39}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!height@{height}}
+\index{height@{height}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily int A\+V\+L\+Tree\+::height (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A utility function to get the height of the tree. 
+\begin{DoxyParams}{Parameters}
+{\em N} & \hyperlink{class_node}{Node} of which height to be determined \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 380 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_a_v_l_tree_a3dc3f18fce5d4124bfb94eb6cfa2e400}\label{class_a_v_l_tree_a3dc3f18fce5d4124bfb94eb6cfa2e400}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!in\+Order@{in\+Order}}
+\index{in\+Order@{in\+Order}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{in\+Order()}{inOrder()}}
+{\footnotesize\ttfamily void A\+V\+L\+Tree\+::in\+Order (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A utility function to print preorder traversal of the tree. The function also prints height of every node. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of A\+VL Tree. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 547 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_a_v_l_tree_adab09466d7b80c7b10eade93fca1b831}\label{class_a_v_l_tree_adab09466d7b80c7b10eade93fca1b831}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!insert@{insert}}
+\index{insert@{insert}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ A\+V\+L\+Tree\+::insert (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{node,  }\item[{int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Recursive function to insert a key in the subtree rooted with node and returns the new root of the subtree. 
+\begin{DoxyParams}{Parameters}
+{\em node} & Root of A\+VL Tree. \\
+\hline
+{\em data} & integer to be inserted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 490 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_a_v_l_tree_a8dc98844f7c4301e071bbc7c062ba9b5}\label{class_a_v_l_tree_a8dc98844f7c4301e071bbc7c062ba9b5}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!left\+Rotate@{left\+Rotate}}
+\index{left\+Rotate@{left\+Rotate}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{left\+Rotate()}{leftRotate()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ A\+V\+L\+Tree\+::left\+Rotate (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A utility function to left rotate subtree rooted with y. 
+\begin{DoxyParams}{Parameters}
+{\em x} & \hyperlink{class_node}{Node} about which to be rotated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 449 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_a_v_l_tree_a4717d25b108d9ad8d67258c75e44f696}\label{class_a_v_l_tree_a4717d25b108d9ad8d67258c75e44f696}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!level\+Vise\+Indentation@{level\+Vise\+Indentation}}
+\index{level\+Vise\+Indentation@{level\+Vise\+Indentation}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{level\+Vise\+Indentation()}{levelViseIndentation()}}
+{\footnotesize\ttfamily void A\+V\+L\+Tree\+::level\+Vise\+Indentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method will be used to print the A\+VL Tree with lavel-\/wise-\/indentation. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 584 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_a_v_l_tree_a4a917504798c964c12d6ea23bff6710c}\label{class_a_v_l_tree_a4a917504798c964c12d6ea23bff6710c}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!level\+Vise\+Indentation\+Helper@{level\+Vise\+Indentation\+Helper}}
+\index{level\+Vise\+Indentation\+Helper@{level\+Vise\+Indentation\+Helper}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{level\+Vise\+Indentation\+Helper()}{levelViseIndentationHelper()}}
+{\footnotesize\ttfamily void A\+V\+L\+Tree\+::level\+Vise\+Indentation\+Helper (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{rt,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper method for method \hyperlink{class_a_v_l_tree_a4717d25b108d9ad8d67258c75e44f696}{level\+Vise\+Indentation()}. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of A\+VL Tree. \\
+\hline
+{\em l} & level of that node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 564 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_a_v_l_tree_ae5cd885ee0ad8a06a933bdac473c3cc5}\label{class_a_v_l_tree_ae5cd885ee0ad8a06a933bdac473c3cc5}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!max@{max}}
+\index{max@{max}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{max()}{max()}}
+{\footnotesize\ttfamily int A\+V\+L\+Tree\+::max (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A utility function to get maximum of two integers. 
+\begin{DoxyParams}{Parameters}
+{\em a} & first integer. \\
+\hline
+{\em b} & second integer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 394 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_a_v_l_tree_a7d0da3880ea6b30f7df37547f99be642}\label{class_a_v_l_tree_a7d0da3880ea6b30f7df37547f99be642}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!new\+Node@{new\+Node}}
+\index{new\+Node@{new\+Node}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{new\+Node()}{newNode()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ A\+V\+L\+Tree\+::new\+Node (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper function that allocates a new node with the given key and N\+U\+LL left and right pointers. 
+\begin{DoxyParams}{Parameters}
+{\em key} & data to be inserted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 405 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_a_v_l_tree_a6fe238e7e0e458de06ee3357f5044e3a}\label{class_a_v_l_tree_a6fe238e7e0e458de06ee3357f5044e3a}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!print\+Path@{print\+Path}}
+\index{print\+Path@{print\+Path}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{print\+Path()}{printPath()}}
+{\footnotesize\ttfamily void A\+V\+L\+Tree\+::print\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{rt,  }\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper method for method \hyperlink{class_a_v_l_tree_acfeb6a8c2b2ddd309747a7f5d402e2ed}{get\+All\+Paths()}. 
+\begin{DoxyParams}{Parameters}
+{\em rt} & Root of A\+VL Tree. \\
+\hline
+{\em s} & string containing details of nodes traversed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 595 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_a_v_l_tree_a735406d043d3dc61e0ed08455381487a}\label{class_a_v_l_tree_a735406d043d3dc61e0ed08455381487a}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!right\+Rotate@{right\+Rotate}}
+\index{right\+Rotate@{right\+Rotate}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{right\+Rotate()}{rightRotate()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ A\+V\+L\+Tree\+::right\+Rotate (\begin{DoxyParamCaption}\item[{\hyperlink{class_node}{Node} $\ast$}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A utility function to right rotate subtree rooted with y. 
+\begin{DoxyParams}{Parameters}
+{\em y} & \hyperlink{class_node}{Node} about which to be rotated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 422 of file q1.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_v_l_tree_a3db9914a012a92648fc774b1112c79f0}\label{class_a_v_l_tree_a3db9914a012a92648fc774b1112c79f0}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!root@{root}}
+\index{root@{root}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node}$\ast$ A\+V\+L\+Tree\+::root}
+
+
+
+Root of A\+VL Tree. 
+
+
+
+Definition at line 372 of file q1.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/kavya/\+Desktop/ass3/q1/code/\hyperlink{q1_8cpp}{q1.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,334 @@
+\hypertarget{q3_8c}{}\section{/home/kavya/\+Desktop/csn261\+\_\+lab\+\_\+assignment1/q3/code/q3.c File Reference}
+\label{q3_8c}\index{/home/kavya/\+Desktop/csn261\+\_\+lab\+\_\+assignment1/q3/code/q3.\+c@{/home/kavya/\+Desktop/csn261\+\_\+lab\+\_\+assignment1/q3/code/q3.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for q3.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{q3_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{q3_8c_aebdd5770824be5bb72f0d5c93c2b49d1}{readcolor} (char $\ast$color)
+\begin{DoxyCompactList}\small\item\em Method to read a color .dat file with an argument \char`\"{}color\char`\"{}\{e.\+g., \char`\"{}blue\char`\"{},\char`\"{}red\char`\"{},\char`\"{}green\char`\"{}\}. \end{DoxyCompactList}\item 
+void \hyperlink{q3_8c_a66e93f3d6145d7f66fbad8faba1f6cec}{pixel\+Value} (int x, int y)
+\item 
+void \hyperlink{q3_8c_a93832eec42790739937c7d229cf75ab3}{remove\+Red} ()
+\begin{DoxyCompactList}\small\item\em Removes only red shades. \end{DoxyCompactList}\item 
+void \hyperlink{q3_8c_a5e899ed2c0c1f24b044a9de56d3b0afb}{remove\+Blue} ()
+\begin{DoxyCompactList}\small\item\em Removes only blue shades. \end{DoxyCompactList}\item 
+void \hyperlink{q3_8c_aad3539a5dd6777c79a1e0cd280b95acf}{remove\+Green} ()
+\begin{DoxyCompactList}\small\item\em Removes only green shades. \end{DoxyCompactList}\item 
+void \hyperlink{q3_8c_af9393dcdbcdf45db26c0379ab29cdfa9}{red\+Only} ()
+\begin{DoxyCompactList}\small\item\em Removes blue and green shades. \end{DoxyCompactList}\item 
+void \hyperlink{q3_8c_ab41f190053202d0dace818e7bf2b3baa}{blue\+Only} ()
+\begin{DoxyCompactList}\small\item\em Removes red and green shades. \end{DoxyCompactList}\item 
+void \hyperlink{q3_8c_ad1543fdc021f2c0b48bf978ca970b4c4}{green\+Only} ()
+\begin{DoxyCompactList}\small\item\em Removes red and green shades. \end{DoxyCompactList}\item 
+void \hyperlink{q3_8c_ac5b582953e050613c9ebddbf955bd775}{save\+Red\+File} ()
+\begin{DoxyCompactList}\small\item\em Save new .dat for modified red shades. \end{DoxyCompactList}\item 
+void \hyperlink{q3_8c_a9a5091618a77218d43ae2cc86e93ae7c}{save\+Blue\+File} ()
+\begin{DoxyCompactList}\small\item\em Save new .dat for modified blue shades. \end{DoxyCompactList}\item 
+void \hyperlink{q3_8c_abf58b8ee4c4c416a13430de035adcc7c}{save\+Green\+File} ()
+\begin{DoxyCompactList}\small\item\em Save new .dat for modified green shades. \end{DoxyCompactList}\item 
+int \hyperlink{q3_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{q3_8c_a5d3c0378aff2afa9078c7ac258239b5f}{red} \mbox{[}953\mbox{]}\mbox{[}1268\mbox{]}
+\begin{DoxyCompactList}\small\item\em 2-\/d Array for Red color \end{DoxyCompactList}\item 
+int \hyperlink{q3_8c_aea5718db8c8c445fe782dcafcea801e4}{blue} \mbox{[}953\mbox{]}\mbox{[}1268\mbox{]}
+\begin{DoxyCompactList}\small\item\em 2-\/d Array for Blue color \end{DoxyCompactList}\item 
+int \hyperlink{q3_8c_ad5d23d704ba8a4ef0db1b395c2899b68}{green} \mbox{[}953\mbox{]}\mbox{[}1268\mbox{]}
+\begin{DoxyCompactList}\small\item\em 2-\/d Array for Green color \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{q3_8c_ab41f190053202d0dace818e7bf2b3baa}\label{q3_8c_ab41f190053202d0dace818e7bf2b3baa}} 
+\index{q3.\+c@{q3.\+c}!blue\+Only@{blue\+Only}}
+\index{blue\+Only@{blue\+Only}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{blue\+Only()}{blueOnly()}}
+{\footnotesize\ttfamily void blue\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes red and green shades. 
+
+This method will be used to remove shades except blue. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 151 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_ad1543fdc021f2c0b48bf978ca970b4c4}\label{q3_8c_ad1543fdc021f2c0b48bf978ca970b4c4}} 
+\index{q3.\+c@{q3.\+c}!green\+Only@{green\+Only}}
+\index{green\+Only@{green\+Only}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{green\+Only()}{greenOnly()}}
+{\footnotesize\ttfamily void green\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes red and green shades. 
+
+This method will be used to remove shades except green. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 162 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{q3_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{q3.\+c@{q3.\+c}!main@{main}}
+\index{main@{main}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 237 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_a66e93f3d6145d7f66fbad8faba1f6cec}\label{q3_8c_a66e93f3d6145d7f66fbad8faba1f6cec}} 
+\index{q3.\+c@{q3.\+c}!pixel\+Value@{pixel\+Value}}
+\index{pixel\+Value@{pixel\+Value}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{pixel\+Value()}{pixelValue()}}
+{\footnotesize\ttfamily void pixel\+Value (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+This method will be used to print the pixel-\/value at (x,y). \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x,y} & pixel co-\/ordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 77 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_aebdd5770824be5bb72f0d5c93c2b49d1}\label{q3_8c_aebdd5770824be5bb72f0d5c93c2b49d1}} 
+\index{q3.\+c@{q3.\+c}!readcolor@{readcolor}}
+\index{readcolor@{readcolor}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{readcolor()}{readcolor()}}
+{\footnotesize\ttfamily void readcolor (\begin{DoxyParamCaption}\item[{char $\ast$}]{color }\end{DoxyParamCaption})}
+
+
+
+Method to read a color .dat file with an argument \char`\"{}color\char`\"{}\{e.\+g., \char`\"{}blue\char`\"{},\char`\"{}red\char`\"{},\char`\"{}green\char`\"{}\}. 
+
+This method will be used to read a color .dat file with an argument \char`\"{}color\char`\"{}\{e.\+g., \char`\"{}blue\char`\"{},\char`\"{}red\char`\"{},\char`\"{}green\char`\"{}\} \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em color} & to be choosen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 24 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_af9393dcdbcdf45db26c0379ab29cdfa9}\label{q3_8c_af9393dcdbcdf45db26c0379ab29cdfa9}} 
+\index{q3.\+c@{q3.\+c}!red\+Only@{red\+Only}}
+\index{red\+Only@{red\+Only}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{red\+Only()}{redOnly()}}
+{\footnotesize\ttfamily void red\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes blue and green shades. 
+
+This method will be used to remove shades except red. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 140 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_a5e899ed2c0c1f24b044a9de56d3b0afb}\label{q3_8c_a5e899ed2c0c1f24b044a9de56d3b0afb}} 
+\index{q3.\+c@{q3.\+c}!remove\+Blue@{remove\+Blue}}
+\index{remove\+Blue@{remove\+Blue}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{remove\+Blue()}{removeBlue()}}
+{\footnotesize\ttfamily void remove\+Blue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes only blue shades. 
+
+This method will be used to remove all blue shades. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 108 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_aad3539a5dd6777c79a1e0cd280b95acf}\label{q3_8c_aad3539a5dd6777c79a1e0cd280b95acf}} 
+\index{q3.\+c@{q3.\+c}!remove\+Green@{remove\+Green}}
+\index{remove\+Green@{remove\+Green}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{remove\+Green()}{removeGreen()}}
+{\footnotesize\ttfamily void remove\+Green (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes only green shades. 
+
+This method will be used to remove all green shades. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 124 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_a93832eec42790739937c7d229cf75ab3}\label{q3_8c_a93832eec42790739937c7d229cf75ab3}} 
+\index{q3.\+c@{q3.\+c}!remove\+Red@{remove\+Red}}
+\index{remove\+Red@{remove\+Red}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{remove\+Red()}{removeRed()}}
+{\footnotesize\ttfamily void remove\+Red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes only red shades. 
+
+This method will be used to remove all red shades. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 92 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_a9a5091618a77218d43ae2cc86e93ae7c}\label{q3_8c_a9a5091618a77218d43ae2cc86e93ae7c}} 
+\index{q3.\+c@{q3.\+c}!save\+Blue\+File@{save\+Blue\+File}}
+\index{save\+Blue\+File@{save\+Blue\+File}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{save\+Blue\+File()}{saveBlueFile()}}
+{\footnotesize\ttfamily void save\+Blue\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Save new .dat for modified blue shades. 
+
+This method will be used to Save new .dat for modified blue shades. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 196 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_abf58b8ee4c4c416a13430de035adcc7c}\label{q3_8c_abf58b8ee4c4c416a13430de035adcc7c}} 
+\index{q3.\+c@{q3.\+c}!save\+Green\+File@{save\+Green\+File}}
+\index{save\+Green\+File@{save\+Green\+File}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{save\+Green\+File()}{saveGreenFile()}}
+{\footnotesize\ttfamily void save\+Green\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Save new .dat for modified green shades. 
+
+This method will be used to Save new .dat for modified green shades. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 219 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_ac5b582953e050613c9ebddbf955bd775}\label{q3_8c_ac5b582953e050613c9ebddbf955bd775}} 
+\index{q3.\+c@{q3.\+c}!save\+Red\+File@{save\+Red\+File}}
+\index{save\+Red\+File@{save\+Red\+File}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{save\+Red\+File()}{saveRedFile()}}
+{\footnotesize\ttfamily void save\+Red\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Save new .dat for modified red shades. 
+
+This method will be used to Save new .dat for modified red shades. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+31/07/2019 
+\end{DoxyDate}
+
+
+Definition at line 173 of file q3.\+c.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{q3_8c_aea5718db8c8c445fe782dcafcea801e4}\label{q3_8c_aea5718db8c8c445fe782dcafcea801e4}} 
+\index{q3.\+c@{q3.\+c}!blue@{blue}}
+\index{blue@{blue}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{blue}{blue}}
+{\footnotesize\ttfamily int blue\mbox{[}953\mbox{]}\mbox{[}1268\mbox{]}}
+
+
+
+2-\/d Array for Blue color 
+
+
+
+Definition at line 14 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_ad5d23d704ba8a4ef0db1b395c2899b68}\label{q3_8c_ad5d23d704ba8a4ef0db1b395c2899b68}} 
+\index{q3.\+c@{q3.\+c}!green@{green}}
+\index{green@{green}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{green}{green}}
+{\footnotesize\ttfamily int green\mbox{[}953\mbox{]}\mbox{[}1268\mbox{]}}
+
+
+
+2-\/d Array for Green color 
+
+
+
+Definition at line 15 of file q3.\+c.
+
+\mbox{\Hypertarget{q3_8c_a5d3c0378aff2afa9078c7ac258239b5f}\label{q3_8c_a5d3c0378aff2afa9078c7ac258239b5f}} 
+\index{q3.\+c@{q3.\+c}!red@{red}}
+\index{red@{red}!q3.\+c@{q3.\+c}}
+\subsubsection{\texorpdfstring{red}{red}}
+{\footnotesize\ttfamily int red\mbox{[}953\mbox{]}\mbox{[}1268\mbox{]}}
+
+
+
+2-\/d Array for Red color 
+
+
+
+Definition at line 13 of file q3.\+c.
+

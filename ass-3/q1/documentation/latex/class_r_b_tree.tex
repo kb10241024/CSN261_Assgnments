@@ -1,0 +1,297 @@
+\hypertarget{class_r_b_tree}{}\section{R\+B\+Tree Class Reference}
+\label{class_r_b_tree}\index{R\+B\+Tree@{R\+B\+Tree}}
+
+
+Class to represent Red-\/\+Black Tree.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_r_b_tree_a19921f34f32f777bb3c4b85d4ff1d9de}{R\+B\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Constructor of R\+BT. \end{DoxyCompactList}\item 
+void \hyperlink{class_r_b_tree_a9f693206c06a050b84a9ce241365e9cf}{inorder\+Helper} (\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$root)
+\item 
+\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$ \hyperlink{class_r_b_tree_ac4d5b255ece286dc3fdd791d2a46bded}{B\+S\+T\+Insert} (\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$root, \hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$pt)
+\item 
+void \hyperlink{class_r_b_tree_ae0f34aa205c291c2c50f9e1be4299454}{insert} (const int \&data)
+\item 
+void \hyperlink{class_r_b_tree_aff8e5c4479e6708da9a6cbfc276836a3}{inorder} ()
+\item 
+void \hyperlink{class_r_b_tree_a3c9ae2993698192390a17a57df86febc}{level\+Vise\+Indentation\+Helper} (\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$rt, int l)
+\item 
+void \hyperlink{class_r_b_tree_addb32f82fc392201f9b8d6f3aaddb382}{level\+Vise\+Indentation} ()
+\item 
+void \hyperlink{class_r_b_tree_ade103a94c3a3cd1f6a98a354d8f798d1}{print\+Path} (\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$rt, string s)
+\item 
+void \hyperlink{class_r_b_tree_a12c03168e62443644c5043fd2ffb5f39}{get\+All\+Paths} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_r_b_tree_a270245764ca4bafce48daa2814841b14}{rotate\+Left} (\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&root, \hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&pt)
+\item 
+void \hyperlink{class_r_b_tree_a9843ddcab67030b508032eeb991d4714}{rotate\+Right} (\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&root, \hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&pt)
+\item 
+void \hyperlink{class_r_b_tree_a5052e46871a174091018381a92b35728}{fix\+Violation} (\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&root, \hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&pt)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to represent Red-\/\+Black Tree. 
+
+Definition at line 29 of file q1.\+cpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_b_tree_a19921f34f32f777bb3c4b85d4ff1d9de}\label{class_r_b_tree_a19921f34f32f777bb3c4b85d4ff1d9de}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!R\+B\+Tree@{R\+B\+Tree}}
+\index{R\+B\+Tree@{R\+B\+Tree}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{R\+B\+Tree()}{RBTree()}}
+{\footnotesize\ttfamily R\+B\+Tree\+::\+R\+B\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of R\+BT. 
+
+
+
+Definition at line 199 of file q1.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_b_tree_ac4d5b255ece286dc3fdd791d2a46bded}\label{class_r_b_tree_ac4d5b255ece286dc3fdd791d2a46bded}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!B\+S\+T\+Insert@{B\+S\+T\+Insert}}
+\index{B\+S\+T\+Insert@{B\+S\+T\+Insert}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{B\+S\+T\+Insert()}{BSTInsert()}}
+{\footnotesize\ttfamily \hyperlink{struct_r_b_t_node}{R\+B\+T\+Node}$\ast$ R\+B\+Tree\+::\+B\+S\+T\+Insert (\begin{DoxyParamCaption}\item[{\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$}]{root,  }\item[{\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$}]{pt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A utility function to insert a new \hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} with given key in B\+ST. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of R\+BT. \\
+\hline
+{\em pt} & \hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} to be inserted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 233 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_r_b_tree_a5052e46871a174091018381a92b35728}\label{class_r_b_tree_a5052e46871a174091018381a92b35728}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!fix\+Violation@{fix\+Violation}}
+\index{fix\+Violation@{fix\+Violation}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{fix\+Violation()}{fixViolation()}}
+{\footnotesize\ttfamily void R\+B\+Tree\+::fix\+Violation (\begin{DoxyParamCaption}\item[{\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&}]{root,  }\item[{\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&}]{pt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+This function fixes violations caused by B\+ST insertion. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of R\+BT. \\
+\hline
+{\em pt} & \hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} to be inserted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 105 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_r_b_tree_a12c03168e62443644c5043fd2ffb5f39}\label{class_r_b_tree_a12c03168e62443644c5043fd2ffb5f39}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!get\+All\+Paths@{get\+All\+Paths}}
+\index{get\+All\+Paths@{get\+All\+Paths}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{get\+All\+Paths()}{getAllPaths()}}
+{\footnotesize\ttfamily void R\+B\+Tree\+::get\+All\+Paths (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method will be used to print all the paths from root node to the N\+U\+LL pointers of RB Tree. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 345 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_r_b_tree_aff8e5c4479e6708da9a6cbfc276836a3}\label{class_r_b_tree_aff8e5c4479e6708da9a6cbfc276836a3}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!inorder@{inorder}}
+\index{inorder@{inorder}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{inorder()}{inorder()}}
+{\footnotesize\ttfamily void R\+B\+Tree\+::inorder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function to do inorder traversals in Red Black Tree(\+R\+B\+T). \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 277 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_r_b_tree_a9f693206c06a050b84a9ce241365e9cf}\label{class_r_b_tree_a9f693206c06a050b84a9ce241365e9cf}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!inorder\+Helper@{inorder\+Helper}}
+\index{inorder\+Helper@{inorder\+Helper}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{inorder\+Helper()}{inorderHelper()}}
+{\footnotesize\ttfamily void R\+B\+Tree\+::inorder\+Helper (\begin{DoxyParamCaption}\item[{\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A recursive function to do level order traversal. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of R\+BT. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 207 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_r_b_tree_ae0f34aa205c291c2c50f9e1be4299454}\label{class_r_b_tree_ae0f34aa205c291c2c50f9e1be4299454}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!insert@{insert}}
+\index{insert@{insert}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void R\+B\+Tree\+::insert (\begin{DoxyParamCaption}\item[{const int \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function to insert a new \hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} with given data. 
+\begin{DoxyParams}{Parameters}
+{\em data} & integer to be inserted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 261 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_r_b_tree_addb32f82fc392201f9b8d6f3aaddb382}\label{class_r_b_tree_addb32f82fc392201f9b8d6f3aaddb382}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!level\+Vise\+Indentation@{level\+Vise\+Indentation}}
+\index{level\+Vise\+Indentation@{level\+Vise\+Indentation}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{level\+Vise\+Indentation()}{levelViseIndentation()}}
+{\footnotesize\ttfamily void R\+B\+Tree\+::level\+Vise\+Indentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method will be used to print the Red Black Tree(\+R\+B\+T) with lavel-\/wise-\/indentation. \begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 313 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_r_b_tree_a3c9ae2993698192390a17a57df86febc}\label{class_r_b_tree_a3c9ae2993698192390a17a57df86febc}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!level\+Vise\+Indentation\+Helper@{level\+Vise\+Indentation\+Helper}}
+\index{level\+Vise\+Indentation\+Helper@{level\+Vise\+Indentation\+Helper}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{level\+Vise\+Indentation\+Helper()}{levelViseIndentationHelper()}}
+{\footnotesize\ttfamily void R\+B\+Tree\+::level\+Vise\+Indentation\+Helper (\begin{DoxyParamCaption}\item[{\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$}]{rt,  }\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper method for method \hyperlink{class_r_b_tree_addb32f82fc392201f9b8d6f3aaddb382}{level\+Vise\+Indentation()}. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of R\+BT. \\
+\hline
+{\em l} & level of that node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 286 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_r_b_tree_ade103a94c3a3cd1f6a98a354d8f798d1}\label{class_r_b_tree_ade103a94c3a3cd1f6a98a354d8f798d1}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!print\+Path@{print\+Path}}
+\index{print\+Path@{print\+Path}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{print\+Path()}{printPath()}}
+{\footnotesize\ttfamily void R\+B\+Tree\+::print\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$}]{rt,  }\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Helper method for method \hyperlink{class_r_b_tree_a12c03168e62443644c5043fd2ffb5f39}{get\+All\+Paths()}. 
+\begin{DoxyParams}{Parameters}
+{\em rt} & Root of RB Tree. \\
+\hline
+{\em s} & string containing details of nodes traversed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 324 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_r_b_tree_a270245764ca4bafce48daa2814841b14}\label{class_r_b_tree_a270245764ca4bafce48daa2814841b14}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!rotate\+Left@{rotate\+Left}}
+\index{rotate\+Left@{rotate\+Left}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{rotate\+Left()}{rotateLeft()}}
+{\footnotesize\ttfamily void R\+B\+Tree\+::rotate\+Left (\begin{DoxyParamCaption}\item[{\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&}]{root,  }\item[{\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&}]{pt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+This helper function used for left rotation in R\+BT. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of R\+BT. \\
+\hline
+{\em pt} & \hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} to be inserted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 43 of file q1.\+cpp.
+
+\mbox{\Hypertarget{class_r_b_tree_a9843ddcab67030b508032eeb991d4714}\label{class_r_b_tree_a9843ddcab67030b508032eeb991d4714}} 
+\index{R\+B\+Tree@{R\+B\+Tree}!rotate\+Right@{rotate\+Right}}
+\index{rotate\+Right@{rotate\+Right}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection{\texorpdfstring{rotate\+Right()}{rotateRight()}}
+{\footnotesize\ttfamily void R\+B\+Tree\+::rotate\+Right (\begin{DoxyParamCaption}\item[{\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&}]{root,  }\item[{\hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} $\ast$\&}]{pt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+This helper function used for right rotation in R\+BT. 
+\begin{DoxyParams}{Parameters}
+{\em root} & Root of R\+BT. \\
+\hline
+{\em pt} & \hyperlink{struct_r_b_t_node}{R\+B\+T\+Node} to be inserted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 74 of file q1.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/kavya/\+Desktop/ass3/q1/code/\hyperlink{q1_8cpp}{q1.\+cpp}\end{DoxyCompactItemize}
