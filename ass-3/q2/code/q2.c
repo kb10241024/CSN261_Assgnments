@@ -156,10 +156,15 @@ int main()
     clock_t starting=clock();
 
     int a[]={5,2,7};
-    insert(5);
-    insert(2);
+    insert(3);
+    insert(4);
+    insert(0);
     insert(7);
-    
+insert(8);
+insert(12);
+insert(5);
+insert(9);
+insert(3);
     int c=countTriplets(length);
     printf("%d\n",c);
     showTriplets();
