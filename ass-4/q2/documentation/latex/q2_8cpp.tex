@@ -1,0 +1,133 @@
+\hypertarget{q2_8cpp}{}\section{code/q2.cpp File Reference}
+\label{q2_8cpp}\index{code/q2.\+cpp@{code/q2.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for q2.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{q2_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{q2_8cpp_afae5d52e0d0879f1726c52310a06f639}{print\+Board} (int $\ast$board\mbox{[}$\,$\mbox{]}, int n)
+\item 
+bool \hyperlink{q2_8cpp_a785c302729c4047f4507d929866ba659}{no\+Conflict} (int $\ast$board\mbox{[}$\,$\mbox{]}, int i, int j, int n)
+\item 
+void \hyperlink{q2_8cpp_a50ab7e59e2e2b97c7f9eb9651b1d8a43}{NQ} (int $\ast$board\mbox{[}$\,$\mbox{]}, int i, int n)
+\item 
+void \hyperlink{q2_8cpp_af8ba4b5a5a7b2a21b67a1e3f8a1d526a}{N\+Queen} (int n)
+\item 
+int \hyperlink{q2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{q2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{q2_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{q2.\+cpp@{q2.\+cpp}!main@{main}}
+\index{main@{main}!q2.\+cpp@{q2.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 99 of file q2.\+cpp.
+
+\mbox{\Hypertarget{q2_8cpp_a785c302729c4047f4507d929866ba659}\label{q2_8cpp_a785c302729c4047f4507d929866ba659}} 
+\index{q2.\+cpp@{q2.\+cpp}!no\+Conflict@{no\+Conflict}}
+\index{no\+Conflict@{no\+Conflict}!q2.\+cpp@{q2.\+cpp}}
+\subsubsection{\texorpdfstring{no\+Conflict()}{noConflict()}}
+{\footnotesize\ttfamily bool no\+Conflict (\begin{DoxyParamCaption}\item[{int $\ast$}]{board\mbox{[}$\,$\mbox{]},  }\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+This method will be used to check the validity of placement of new queen at ith row and jth cloumn. 
+\begin{DoxyParams}{Parameters}
+{\em board} & n$\ast$n 2-\/d binary array for arrangements of queens. \\
+\hline
+{\em i,row} & number at which new queen is to be placed. \\
+\hline
+{\em j,column} & number at which new queen is to be placed. \\
+\hline
+{\em n} & integer length ,dimension of board n$\ast$n; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 34 of file q2.\+cpp.
+
+\mbox{\Hypertarget{q2_8cpp_a50ab7e59e2e2b97c7f9eb9651b1d8a43}\label{q2_8cpp_a50ab7e59e2e2b97c7f9eb9651b1d8a43}} 
+\index{q2.\+cpp@{q2.\+cpp}!NQ@{NQ}}
+\index{NQ@{NQ}!q2.\+cpp@{q2.\+cpp}}
+\subsubsection{\texorpdfstring{N\+Q()}{NQ()}}
+{\footnotesize\ttfamily void NQ (\begin{DoxyParamCaption}\item[{int $\ast$}]{board\mbox{[}$\,$\mbox{]},  }\item[{int}]{i,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Helper method for N\+Queen problem. 
+\begin{DoxyParams}{Parameters}
+{\em board} & n$\ast$n 2-\/d binary array for arrangements of queens. \\
+\hline
+{\em i,row} & number at which new queen is to be placed. \\
+\hline
+{\em n} & integer length ,dimension of board n$\ast$n; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 56 of file q2.\+cpp.
+
+\mbox{\Hypertarget{q2_8cpp_af8ba4b5a5a7b2a21b67a1e3f8a1d526a}\label{q2_8cpp_af8ba4b5a5a7b2a21b67a1e3f8a1d526a}} 
+\index{q2.\+cpp@{q2.\+cpp}!N\+Queen@{N\+Queen}}
+\index{N\+Queen@{N\+Queen}!q2.\+cpp@{q2.\+cpp}}
+\subsubsection{\texorpdfstring{N\+Queen()}{NQueen()}}
+{\footnotesize\ttfamily void N\+Queen (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+This method Will print all the solution for N\+Queen Problem. 
+\begin{DoxyParams}{Parameters}
+{\em n} & integer length ,dimension of board n$\ast$n; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 86 of file q2.\+cpp.
+
+\mbox{\Hypertarget{q2_8cpp_afae5d52e0d0879f1726c52310a06f639}\label{q2_8cpp_afae5d52e0d0879f1726c52310a06f639}} 
+\index{q2.\+cpp@{q2.\+cpp}!print\+Board@{print\+Board}}
+\index{print\+Board@{print\+Board}!q2.\+cpp@{q2.\+cpp}}
+\subsubsection{\texorpdfstring{print\+Board()}{printBoard()}}
+{\footnotesize\ttfamily void print\+Board (\begin{DoxyParamCaption}\item[{int $\ast$}]{board\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+This method will be used to print the given board for Nquen problem. 
+\begin{DoxyParams}{Parameters}
+{\em board} & n$\ast$n 2-\/d binary array for arrangements of queens \\
+\hline
+{\em n} & integer length ,dimension of board n$\ast$n; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Kavya Barnwal 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 14 of file q2.\+cpp.
+
