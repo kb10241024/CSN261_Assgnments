@@ -1,0 +1,104 @@
+\hypertarget{mainwindow_8cpp}{}\section{dictionary/mainwindow.cpp File Reference}
+\label{mainwindow_8cpp}\index{dictionary/mainwindow.\+cpp@{dictionary/mainwindow.\+cpp}}
+{\ttfamily \#include \char`\"{}mainwindow.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ui\+\_\+mainwindow.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Q\+File$>$}\newline
+{\ttfamily \#include $<$Q\+Text\+Stream$>$}\newline
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+Include dependency graph for mainwindow.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mainwindow_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_trie_node}{Trie\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_trie_node}{Trie\+Node} $\ast$ \hyperlink{mainwindow_8cpp_a0cbc5742145b2215c3e72a39399ba4be}{get\+Node} ()
+\item 
+void \hyperlink{mainwindow_8cpp_a1756f4a6c497f6bb5b8b4194c68c0c31}{insert} (struct \hyperlink{struct_trie_node}{Trie\+Node} $\ast$\hyperlink{mainwindow_8cpp_a316ef3ec13f7a45093d79eb3be22fe98}{root}, string key, string meaning)
+\item 
+Q\+String \hyperlink{mainwindow_8cpp_ad875b76f67d781522617c8188955aae9}{get\+Meaning} (struct \hyperlink{struct_trie_node}{Trie\+Node} $\ast$\hyperlink{mainwindow_8cpp_a316ef3ec13f7a45093d79eb3be22fe98}{root}, string key)
+\item 
+void \hyperlink{mainwindow_8cpp_affe0938b316f925c080ba7304009e3b5}{set\+Dictionary} (struct \hyperlink{struct_trie_node}{Trie\+Node} $\ast$\hyperlink{mainwindow_8cpp_a316ef3ec13f7a45093d79eb3be22fe98}{root}, int num\+\_\+lines)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{mainwindow_8cpp_afb525552ed6d204d5636ad18ccf5355f}{A\+L\+P\+H\+A\+B\+E\+T\+\_\+\+S\+I\+ZE} = 26
+\item 
+struct \hyperlink{struct_trie_node}{Trie\+Node} $\ast$ \hyperlink{mainwindow_8cpp_a316ef3ec13f7a45093d79eb3be22fe98}{root}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{mainwindow_8cpp_ad875b76f67d781522617c8188955aae9}\label{mainwindow_8cpp_ad875b76f67d781522617c8188955aae9}} 
+\index{mainwindow.\+cpp@{mainwindow.\+cpp}!get\+Meaning@{get\+Meaning}}
+\index{get\+Meaning@{get\+Meaning}!mainwindow.\+cpp@{mainwindow.\+cpp}}
+\subsubsection{\texorpdfstring{get\+Meaning()}{getMeaning()}}
+{\footnotesize\ttfamily Q\+String get\+Meaning (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_trie_node}{Trie\+Node} $\ast$}]{root,  }\item[{string}]{key }\end{DoxyParamCaption})}
+
+
+
+Definition at line 49 of file mainwindow.\+cpp.
+
+\mbox{\Hypertarget{mainwindow_8cpp_a0cbc5742145b2215c3e72a39399ba4be}\label{mainwindow_8cpp_a0cbc5742145b2215c3e72a39399ba4be}} 
+\index{mainwindow.\+cpp@{mainwindow.\+cpp}!get\+Node@{get\+Node}}
+\index{get\+Node@{get\+Node}!mainwindow.\+cpp@{mainwindow.\+cpp}}
+\subsubsection{\texorpdfstring{get\+Node()}{getNode()}}
+{\footnotesize\ttfamily struct \hyperlink{struct_trie_node}{Trie\+Node}$\ast$ get\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 16 of file mainwindow.\+cpp.
+
+\mbox{\Hypertarget{mainwindow_8cpp_a1756f4a6c497f6bb5b8b4194c68c0c31}\label{mainwindow_8cpp_a1756f4a6c497f6bb5b8b4194c68c0c31}} 
+\index{mainwindow.\+cpp@{mainwindow.\+cpp}!insert@{insert}}
+\index{insert@{insert}!mainwindow.\+cpp@{mainwindow.\+cpp}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void insert (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_trie_node}{Trie\+Node} $\ast$}]{root,  }\item[{string}]{key,  }\item[{string}]{meaning }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file mainwindow.\+cpp.
+
+\mbox{\Hypertarget{mainwindow_8cpp_affe0938b316f925c080ba7304009e3b5}\label{mainwindow_8cpp_affe0938b316f925c080ba7304009e3b5}} 
+\index{mainwindow.\+cpp@{mainwindow.\+cpp}!set\+Dictionary@{set\+Dictionary}}
+\index{set\+Dictionary@{set\+Dictionary}!mainwindow.\+cpp@{mainwindow.\+cpp}}
+\subsubsection{\texorpdfstring{set\+Dictionary()}{setDictionary()}}
+{\footnotesize\ttfamily void set\+Dictionary (\begin{DoxyParamCaption}\item[{struct \hyperlink{struct_trie_node}{Trie\+Node} $\ast$}]{root,  }\item[{int}]{num\+\_\+lines }\end{DoxyParamCaption})}
+
+
+
+Definition at line 72 of file mainwindow.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{mainwindow_8cpp_afb525552ed6d204d5636ad18ccf5355f}\label{mainwindow_8cpp_afb525552ed6d204d5636ad18ccf5355f}} 
+\index{mainwindow.\+cpp@{mainwindow.\+cpp}!A\+L\+P\+H\+A\+B\+E\+T\+\_\+\+S\+I\+ZE@{A\+L\+P\+H\+A\+B\+E\+T\+\_\+\+S\+I\+ZE}}
+\index{A\+L\+P\+H\+A\+B\+E\+T\+\_\+\+S\+I\+ZE@{A\+L\+P\+H\+A\+B\+E\+T\+\_\+\+S\+I\+ZE}!mainwindow.\+cpp@{mainwindow.\+cpp}}
+\subsubsection{\texorpdfstring{A\+L\+P\+H\+A\+B\+E\+T\+\_\+\+S\+I\+ZE}{ALPHABET\_SIZE}}
+{\footnotesize\ttfamily const int A\+L\+P\+H\+A\+B\+E\+T\+\_\+\+S\+I\+ZE = 26}
+
+
+
+Definition at line 8 of file mainwindow.\+cpp.
+
+\mbox{\Hypertarget{mainwindow_8cpp_a316ef3ec13f7a45093d79eb3be22fe98}\label{mainwindow_8cpp_a316ef3ec13f7a45093d79eb3be22fe98}} 
+\index{mainwindow.\+cpp@{mainwindow.\+cpp}!root@{root}}
+\index{root@{root}!mainwindow.\+cpp@{mainwindow.\+cpp}}
+\subsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily struct \hyperlink{struct_trie_node}{Trie\+Node}$\ast$ root}
+
+
+
+Definition at line 28 of file mainwindow.\+cpp.
+
