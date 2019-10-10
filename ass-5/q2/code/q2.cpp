@@ -117,7 +117,7 @@ int Graph::kruskalMST()
 			// Current edge will be in the MST
 			// so print it
 			outdata << (char)(u + 65) << "--" << (char)(v + 65) << "[label=\"" << (it->first) << "\"];" << endl;
-
+			cout<< (char)(u + 65) << "--" << (char)(v + 65) << "[label=\"" << (it->first) << "\"];" << endl;
 			// Update MST weight
 			mst_wt += it->first;
 
@@ -194,7 +194,7 @@ int main()
 	int V = 9, E = 14;
 	Graph g(V, E);
 
-	string path = "2019_CSN_261_L5_P2.csv";
+	string path = "L5_Testcases_for_P2_and_P3.csv";
 	readGraph(&g, path);
 
 	// cout << "Edges of MST are \n";
